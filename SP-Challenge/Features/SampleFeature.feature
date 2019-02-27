@@ -20,6 +20,7 @@ Scenario: Create a new employee with mandatory details
 	| LSotelo | 33  | 8181853122 | lsotelo@luxoft.com |
 	#And I click the save button
 	#Then I should see all the details saved in my application and DB
+	#Then I should see all the details saved in my application and DB2
 
 Scenario Outline: Create a new employee with mandatory details for different iteration
 	#Given I have open my application

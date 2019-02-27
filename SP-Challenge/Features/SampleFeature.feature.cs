@@ -135,10 +135,10 @@ this.ScenarioInitialize(scenarioInfo);
         public virtual void CreateANewEmployeeWithMandatoryDetailsForDifferentIteration(string name, string age, string phone, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a new employee with mandatory details for different iteration", null, exampleTags);
-#line 24
+#line 25
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 27
+#line 28
  testRunner.When(string.Format("I fill all the mandatory details in form {0}, {1} and {2}", name, age, phone), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             this.ScenarioCleanup();
@@ -149,7 +149,7 @@ this.ScenarioInitialize(scenarioInfo);
         public virtual void CheckIfICouldGetTheDetailsEnteredViaTableFromExtendedSteps()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if I could get the details entered via table from Extended Steps", null, ((string[])(null)));
-#line 36
+#line 37
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line hidden
@@ -163,9 +163,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "35",
                         "8181853121",
                         "jsotelo@luxoft.com"});
-#line 37
+#line 38
  testRunner.When("I fill all the mandatory details in form", ((string)(null)), table2, "When ");
-#line 40
+#line 41
  testRunner.Then("I should get the same value from Extended steps", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

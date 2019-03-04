@@ -6,16 +6,16 @@ namespace SP_Challenge.Tests
 {
     class BaseTest
     {
-        public IWebDriver driver;
+        public static IWebDriver driver;
 
         [SetUp]
-        public void Initialize()
+        public static void Initialize()
         {
             driver = new ChromeDriver();
         }
 
         [TearDown]
-        public void EndTest()
+        public static void EndTest()
         {
             driver.Quit();
         }

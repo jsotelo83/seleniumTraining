@@ -9,7 +9,7 @@ namespace SP_Challenge.Pages
 {
     public class ArticlePage:BasePage
     {
-        public ArticlePage(IWebDriver driver) : base(driver) { }
+        public ArticlePage(IWebDriver driver) : base(driver) {}
 
         By articleTitle = By.CssSelector("#firstHeading");
         By studioAlbumsRow = By.XPath("//th[@scope='row' and @class='navbox-group' and contains(text(),'Studio albums')]");
@@ -79,7 +79,7 @@ namespace SP_Challenge.Pages
                 "evObj.initMouseEvent(\"mouseover\",true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);" +
                 "arguments[0].dispatchEvent(evObj);";
             IJavaScriptExecutor js = ((IJavaScriptExecutor)driver);
-            //Thread.Sleep(2000);
+            Thread.Sleep(2000);
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
             
             js.ExecuteScript(javaScript, link);

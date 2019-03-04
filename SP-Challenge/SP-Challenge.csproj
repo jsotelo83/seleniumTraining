@@ -72,8 +72,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\LoginFeature.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginFeature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\User_Login.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>User_Login.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Wiki_HomePage.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Wiki_HomePage.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Wiki_SearchEngine.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Wiki_SearchEngine.feature</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ArticlePage.cs" />
     <Compile Include="Pages\BasePage.cs" />
+    <Compile Include="Pages\BaseStep.cs" />
     <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,13 +105,33 @@
     </Compile>
     <Compile Include="StepDefinitions\EmployeeDetails.cs" />
     <Compile Include="StepDefinitions\ExtendedSteps.cs" />
+    <Compile Include="StepDefinitions\LoginSteps.cs" />
     <Compile Include="StepDefinitions\SampleFeatureSteps.cs" />
+    <Compile Include="StepDefinitions\UserLoginStep.cs" />
+    <Compile Include="StepDefinitions\Wiki_HomePageSteps.cs" />
+    <Compile Include="StepDefinitions\Wiki_SearchEngineSteps.cs" />
     <Compile Include="TestFixture.cs" />
     <Compile Include="Tests\BaseTest.cs" />
     <Compile Include="Tests\ChallengeTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Features\LoginFeature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>LoginFeature.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\User_Login.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>User_Login.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Wiki_HomePage.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Wiki_HomePage.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Wiki_SearchEngine.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Wiki_SearchEngine.feature.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
     <None Include="Features\SampleFeature.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

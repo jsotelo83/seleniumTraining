@@ -1,7 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using System;
+using SP_Challenge.Pages;
+using SP_Challenge.Tests;
 using TechTalk.SpecFlow;
 
 namespace SP_Challenge
@@ -9,6 +10,7 @@ namespace SP_Challenge
     [Binding]
     public class TestFixture
     {
+    
         [BeforeFeature]
         public static void CalledFirstonFeature()
         {
@@ -18,13 +20,13 @@ namespace SP_Challenge
         [BeforeScenario]
         public void BeforeScenario()
         {
-            Console.WriteLine("Calling before Scenario");
+            BaseTest.Initialize();
         }
 
         [AfterScenario]
         public void AfterScenario()
         {
-            Console.WriteLine("Calling after Scenario");
+            BaseTest.EndTest();
         }
     }
 }

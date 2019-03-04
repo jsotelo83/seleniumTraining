@@ -5,9 +5,16 @@ C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\nunit.engine.a
 C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\SP-Challenge.exe.config
 C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\SP-Challenge.exe
 C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\SP-Challenge.pdb
+C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\ImpromptuInterface.dll
+C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\Newtonsoft.Json.dll
 C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\nunit.framework.dll
+C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\SpecFlow.Assist.Dynamic.dll
+C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\System.ValueTuple.dll
+C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\TechTalk.SpecFlow.dll
 C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\WebDriver.dll
 C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\WebDriver.Support.dll
+C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\ImpromptuInterface.xml
+C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\Newtonsoft.Json.xml
 C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\nunit.framework.pdb
 C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\nunit.framework.xml
 C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\WebDriver.xml
@@ -17,10 +24,3 @@ C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\obj\Debug\SP-Challenge.c
 C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\obj\Debug\SP-Challenge.csproj.CopyComplete
 C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\obj\Debug\SP-Challenge.exe
 C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\obj\Debug\SP-Challenge.pdb
-C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\Newtonsoft.Json.dll
-C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\System.ValueTuple.dll
-C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\TechTalk.SpecFlow.dll
-C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\Newtonsoft.Json.xml
-C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\ImpromptuInterface.dll
-C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\SpecFlow.Assist.Dynamic.dll
-C:\Users\JSotelo\source\repos\SP-Challenge\SP-Challenge\bin\Debug\ImpromptuInterface.xml

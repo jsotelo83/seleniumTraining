@@ -7,7 +7,7 @@ using TechTalk.SpecFlow;
 namespace SP_Challenge.StepDefinitions
 {
     [Binding]
-    public sealed class ExtendedSteps
+    public class ExtendedSteps
     {
         public readonly EmployeeDetails employee;
 

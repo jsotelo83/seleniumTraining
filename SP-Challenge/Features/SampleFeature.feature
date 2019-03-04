@@ -20,7 +20,6 @@ Scenario: Create a new employee with mandatory details
 	| LSotelo | 33  | 8181853122 | lsotelo@luxoft.com |
 	#And I click the save button
 	#Then I should see all the details saved in my application and DB
-	#Then I should see all the details saved in my application and DB2
 
 Scenario Outline: Create a new employee with mandatory details for different iteration
 	#Given I have open my application
@@ -37,5 +36,5 @@ Examples:
 Scenario: Check if I could get the details entered via table from Extended Steps
 	When I fill all the mandatory details in form
 	| Name    | Age | Phone      | Email              |
-	| JSotelo | 35  | 8181853121 | jsotelo@luxoft.com |
+	| JSotelo7 | 35  | 8181853121 | jsotelo7@luxoft.com |
 	Then I should get the same value from Extended steps

@@ -7,7 +7,7 @@ namespace SP_Challenge.Pages
 {
     public class HomePage:BasePage
     {
-        public HomePage(IWebDriver driver) : base(driver) { }
+        public HomePage(IWebDriver driver) : base(driver) {}
 
         By searchInput = By.Id("searchInput");
 

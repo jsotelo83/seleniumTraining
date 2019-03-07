@@ -1,31 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using SP_Challenge.Pages;
-using SP_Challenge.Tests;
 using TechTalk.SpecFlow;
-using TechTalk.SpecFlow.Assist;
+
 
 namespace SP_Challenge.StepDefinitions
 {
     [Binding]
     public class Wiki_HomePageSteps
-    {
-        public IWebDriver driver;
 
-        [Given(@"I have entered to wikipedia home page")]
-        public void GivenIHaveEnteredToWikipediaHomePage()
+    {
+        private readonly IWebDriver webDriver;
+
+        public Wiki_HomePageSteps()
         {
-            
+            this.webDriver = (IWebDriver)ScenarioContext.Current["webDriver"];
+            homePage = new HomePage(this.webDriver);
+        }
+
+        HomePage homePage;
+       
+        [Given(@"I have entered to wikipedia home page")]
+        public void GoToHomePage()
+        {
+            homePage.goToHome();
         }
 
         [Then(@"I see wikipedia site loaded on the screen")]
-        public void ThenISeeWikipediaSiteLoadedOnTheScreen()
+        public void ValidateCurrentURL()
         {
-            HomePage homePage = new HomePage(driver);
             homePage.validateCurrentURL(homePage.getBaseURL());
         }
 

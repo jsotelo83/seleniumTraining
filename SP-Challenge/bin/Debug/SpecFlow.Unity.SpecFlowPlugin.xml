@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SpecFlow.Unity.SpecFlowPlugin</name>
+    </assembly>
+    <members>
+        <member name="T:SpecFlow.Unity.ContainerFinder">
+            <copydoc cref="T:SpecFlow.Unity.IContainerFinder" />
+        </member>
+        <member name="M:SpecFlow.Unity.ContainerFinder.#ctor(TechTalk.SpecFlow.Bindings.IBindingRegistry)">
+            <summary>
+            Creates a new instance of the <see cref="T:SpecFlow.Unity.ContainerFinder"/> class.
+            </summary>
+            <param name="bindingRegistry"></param>
+        </member>
+        <member name="M:SpecFlow.Unity.ContainerFinder.GetCreateScenarioContainer">
+            <copydoc cref="M:SpecFlow.Unity.IContainerFinder.GetCreateScenarioContainer" />
+        </member>
+        <member name="T:SpecFlow.Unity.IContainerFinder">
+            <summary>
+            Responsible for creating the container used by a scenario
+            </summary>
+        </member>
+        <member name="M:SpecFlow.Unity.IContainerFinder.GetCreateScenarioContainer">
+            <summary>
+            Get or create the <see cref="T:Microsoft.Practices.Unity.IUnityContainer"/> to be used by a scenario.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SpecFlow.Unity.UnityExtensions.RegisterStepDefinitions``1(Microsoft.Practices.Unity.IUnityContainer)">
+            <summary>
+            Registers classes with SpecFlow BindingAttribute into the container with default naming and container controller lifetime.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="container"></param>
+        </member>
+    </members>
+</doc>

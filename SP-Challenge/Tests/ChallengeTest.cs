@@ -5,6 +5,7 @@ namespace SP_Challenge.Tests
 {
     class ChallengeTest : BaseTest
     {
+
         [Test]
 
         public void navigateToHomeTest ()
@@ -14,7 +15,6 @@ namespace SP_Challenge.Tests
             homePage.goToHome();
 
             homePage.validateCurrentURL(homePage.getBaseURL());
-        
         }
 
         [Test]

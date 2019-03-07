@@ -84,8 +84,6 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
  testRunner.And("I have entered Taylor Swift into search text box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 8
- testRunner.When("I click search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 9
  testRunner.Then("I see Taylor Swift article result page loaded on the screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -96,16 +94,14 @@ this.ScenarioInitialize(scenarioInfo);
         public virtual void SearchTaylorSwiftInWikipediaSearchBarAndValidateExpectedStudioAlbumns()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search Taylor Swift in Wikipedia search bar and validate expected studio albumns", null, ((string[])(null)));
-#line 11
+#line 10
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 12
+#line 11
  testRunner.Given("I have entered to wikipedia home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 13
+#line 12
  testRunner.And("I have entered Taylor Swift into search text box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 14
- testRunner.When("I click search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 15
+#line 13
  testRunner.Then("I see expected studio albumns properly displayed on the screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -116,16 +112,14 @@ this.ScenarioInitialize(scenarioInfo);
         public virtual void SearchTaylorSwiftInWikipediaSearchBarAndValidateHoverMessageAppears()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search Taylor Swift in Wikipedia search bar and validate hover message appears", null, ((string[])(null)));
-#line 17
+#line 24
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 18
+#line 25
  testRunner.Given("I have entered to wikipedia home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 19
+#line 26
  testRunner.And("I have entered Taylor Swift into search text box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 20
- testRunner.When("I click search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 21
+#line 27
  testRunner.Then("I see hover message appears properly on the screen for Reputation albumn", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

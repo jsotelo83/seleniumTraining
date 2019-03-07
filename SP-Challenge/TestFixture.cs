@@ -1,32 +1,29 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
-using SP_Challenge.Pages;
-using SP_Challenge.Tests;
 using TechTalk.SpecFlow;
 
 namespace SP_Challenge
 {
     [Binding]
-    public class TestFixture
+    public class TestFixture 
     {
-    
-        [BeforeFeature]
-        public static void CalledFirstonFeature()
-        {
-            Console.WriteLine("Calling before Features");
-        }
 
         [BeforeScenario]
-        public void BeforeScenario()
+        public void InitializeWebDriver()
         {
-            BaseTest.Initialize();
+            Console.WriteLine("Before scenario");
+            var webDriver = new ChromeDriver();
+            //objectContainer.RegisterInstanceAs<IWebDriver>(webDriver);
+            ScenarioContext.Current["webDriver"] = webDriver;
         }
 
         [AfterScenario]
-        public void AfterScenario()
+        public void DriverQuit()
         {
-            BaseTest.EndTest();
+            Console.WriteLine("After scenario");
+            var webDriver = (IWebDriver)ScenarioContext.Current["webDriver"];
+            webDriver.Quit();
         }
     }
 }

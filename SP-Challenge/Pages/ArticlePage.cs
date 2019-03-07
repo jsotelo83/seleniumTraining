@@ -12,7 +12,7 @@ namespace SP_Challenge.Pages
         public ArticlePage(IWebDriver driver) : base(driver) {}
 
         By articleTitle = By.CssSelector("#firstHeading");
-        By studioAlbumsRow = By.XPath("//th[@scope='row' and @class='navbox-group' and contains(text(),'Studio albums')]");
+        By studioAlbumsRow = By.CssSelector(".expanded tr:nth-child(3) > .navbox-list");
         By reputationStudioAlbumLink = By.XPath("(//td[@class='navbox-list navbox-odd']//child::div//child::ul//child::li//child::a[text()='Reputation'])[1]");
         By popUp = By.CssSelector(".mwe-popups");
 

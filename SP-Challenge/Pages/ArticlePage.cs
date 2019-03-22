@@ -12,7 +12,8 @@ namespace SP_Challenge.Pages
         public ArticlePage(IWebDriver driver) : base(driver) {}
 
         By articleTitle = By.CssSelector("#firstHeading");
-        By studioAlbumsRow = By.CssSelector(".expanded tr:nth-child(3) > .navbox-list");
+        //By studioAlbumsRow = By.CssSelector(".expanded tr:nth-child(3) > .navbox-list");
+        By studioAlbumsRow = By.XPath("//div[@id='mw-content-text']/div/div[19]/table/tbody/tr[3]/td/div/ul");
         By reputationStudioAlbumLink = By.XPath("(//td[@class='navbox-list navbox-odd']//child::div//child::ul//child::li//child::a[text()='Reputation'])[1]");
         By popUp = By.CssSelector(".mwe-popups");
 
@@ -71,7 +72,7 @@ namespace SP_Challenge.Pages
         {
             IWebElement link = driver.FindElement(reputationStudioAlbumLink);
 
-            click(studioAlbumsRow);
+            //click(studioAlbumsRow);
             //Actions action = new Actions(driver);
             //action.MoveToElement(link).Perform();
 
